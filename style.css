@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
+
+:root{
+    --pri-pink:hsl(322, 100%, 66%);
+    --pri-lPink:hsl(321, 100%, 78%);
+    --pri-lRed:hsl(0, 100%, 63%);
+    --ntrl-vdCyan:hsl(192, 100%, 9%);
+    --ntrl-vpBlue:hsl(207, 100%, 98%);
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans',sans-serif;
+    text-align: center;
+}
+img{
+    max-width: 400px;
+    margin: 2rem;
+}
+header{
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.5rem;
+}
+h1{
+    font-size: 3rem;
+    margin: 0;
+}
+.logo{
+    padding: 0rem;
+    margin: 1rem;
+    text-align: left;
+}
+.logo img{
+    margin: 0;
+}
+.logo button{
+    border: solid 1px var(--pri-pink);
+    border-radius: 32px;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    color: var(--pri-pink);
+    float: right;
+}
+main{
+    padding: 3rem;
+}
+main header{
+    font-size: 2rem;
+}
+main button{
+    margin-top: 2rem;
+    border: solid 1px var(--pri-pink);
+    border-radius: 32px;
+    padding: 0.8rem 2.5rem;
+    font-weight: 600;
+    background-color: var(--pri-pink);
+    color: white;
+}
+.formed{
+    margin: 3rem;
+}
+.msg{
+    margin: 3rem;
+}
+.accolades img{
+    margin: 0;
+    max-width: 24px;
+    position: relative;
+    right: 3rem;
+}
+.grow,.convos,.users{
+    padding: 4.3rem;
+}
+.community{
+    padding: 4.3rem;
+}
+.community button{
+    margin-top: 2rem;
+    border: solid 1px var(--pri-pink);
+    border-radius: 32px;
+    padding: 0.8rem 2.5rem;
+    font-weight: 600;
+    background-color: var(--pri-pink);
+    color: white;
+}
+footer{
+    background-color: var(--ntrl-vdCyan);
+    color: white;
+    padding: 1rem;
+    margin: 0rem;
+    text-align: left;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 400;
+}
+footer p,header{
+    margin: 0rem 2rem;
+    line-height: 1.5;
+}
+footer p >img{
+    margin: 0rem 1rem;
+}
+.news header{
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 600;
+}
+.news input{
+    padding: 1rem 2rem;
+    margin: 0rem 2rem;
+}
+.news button{
+    margin-top: 2rem;
+    border: solid 1px var(--pri-pink);
+    border-radius: 10px;
+    padding: 0.8rem 2.5rem;
+    font-weight: 600;
+    background-color: var(--pri-pink);
+    color: white;
+}
+
+@media only screen and (min-width:769px){
+    header{
+        font-size: 2rem;
+    }
+    h1{
+        font-size: 5rem;
+    }
+    main{
+        margin: 2rem 10rem;
+    }
+    main p{
+        margin: 1rem 5rem;
+    }
+    .screen{
+        max-width: 80%;
+    }
+    .accolades{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .grow,.convos,.users{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .users img,.grow img{
+        grid-area: 1/2/1/2;
+    }
+    .txt{
+        text-align: left;
+        justify-self: center;
+        align-self: center;
+    }
+    .community button{
+        padding: 1rem 6rem;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .news{
+        grid-area: 1/2/1/2;
+    }
+}
+
