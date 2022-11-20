@@ -7,7 +7,7 @@
     --ntrl-vdCyan:hsl(192, 100%, 9%);
     --ntrl-vpBlue:hsl(207, 100%, 98%);
 }
-/* GENERAL */
+/* *GENERAL */
 body{
     margin: 0;
     padding: 0;
@@ -16,14 +16,17 @@ body{
     text-align: center;
 }
 img{
-    max-width: 400px;
+    max-width: 350px;
     margin: 2rem;
 }
 h1{
     font-size: 3rem;
     margin: 0;
 }
-/* HEADER */
+button:hover{
+    filter: brightness(1.2);
+}
+/* *HEADER */
 header{
     font-family: 'Poppins',sans-serif;
     font-size: 1.5rem;
@@ -44,7 +47,7 @@ header{
     color: var(--pri-pink);
     float: right;
 }
-/* MAIN */
+/* *MAIN */
 main{
     padding: 3rem;
 }
@@ -60,7 +63,7 @@ main button{
     background-color: var(--pri-pink);
     color: white;
 }
-/* ACCOLADES */
+/* *ACCOLADES */
 .formed{
     margin: 3rem;
 }
@@ -73,12 +76,13 @@ main button{
     position: relative;
     right: 3rem;
 }
-/* ARTICLES */
-.grow,.convos,.users{
+/* *ARTICLES */
+article{
     padding: 4.3rem;
 }
-.community{
-    padding: 4.3rem;
+article img{
+    margin: auto;
+    padding: 2rem 0rem;
 }
 .community button{
     margin-top: 2rem;
@@ -89,7 +93,7 @@ main button{
     background-color: var(--pri-pink);
     color: white;
 }
-/* FOOTER */
+/* *FOOTER */
 footer{
     background-color: var(--ntrl-vdCyan);
     color: white;
@@ -109,6 +113,10 @@ footer p >img{
 .news header{
     font-family: 'Open Sans',sans-serif;
     font-weight: 600;
+    text-transform: uppercase;
+}
+.news p{
+    padding: 1rem 0rem;
 }
 .news input{
     padding: 1rem 2rem;
@@ -126,13 +134,13 @@ footer p >img{
 .etc p{
     padding: .5rem 0rem;
 }
-button:hover{
-    filter: brightness(1.2);
-}
-
+/* *DESKTOP */
 @media only screen and (min-width:769px){
     header{
         font-size: 2rem;
+    }
+    .logo button{
+        padding: .7rem 2rem;
     }
     h1{
         font-size: 5rem;
@@ -144,7 +152,7 @@ button:hover{
         margin: 1rem 5rem;
     }
     .screen{
-        max-width: 80%;
+        max-width: 55%;
     }
     .accolades{
         display: grid;
@@ -162,6 +170,9 @@ button:hover{
         justify-self: center;
         align-self: center;
     }
+    .community{
+        margin: 5rem 0rem;
+    }
     .community button{
         padding: 1rem 6rem;
     }
@@ -173,4 +184,3 @@ button:hover{
         grid-area: 1/2/1/2;
     }
 }
-
