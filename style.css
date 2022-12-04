@@ -46,11 +46,16 @@ header{
     color: var(--pri-pink);
     float: right;
 }
+.logo button:hover{
+    background-color: var(--pri-pink);
+    color: #fff;
+    border: 0px solid;
+}
 /* *MAIN */
 main{
     padding: 3rem;
 }
-main header{
+main h2{
     font-size: 2rem;
 }
 main button{
@@ -78,11 +83,11 @@ main button{
     position: relative;
     right: 3rem;
 }
-/* *ARTICLES */
-article{
+/* *Sections */
+section, article{
     padding: 4.3rem;
 }
-article img{
+section img{
     margin: auto;
     padding: 2rem 0rem;
     max-width: 350px;
@@ -154,31 +159,40 @@ footer svg{
 }
 /* *DESKTOP */
 @media only screen and (min-width:769px){
-    header{
+    .logo{
         font-size: 2rem;
+        margin: 1rem 3rem;
+        padding: 1rem;
     }
     .logo button{
-        padding: .7rem 2rem;
-    }
-    h1{
-        font-size: 5rem;
+        padding: 1rem 2.5rem;
     }
     main{
-        margin: 2rem 10rem;
+        display: flex;
+        margin: 2rem 3rem;
+        padding: 1rem;
     }
-    main p{
-        margin: 1rem 5rem;
+    main h2{
+        font-size: 2.5rem;
     }
     .screen{
-        max-width: 55%;
+        max-width: 50%;
     }
     .accolades{
         display: grid;
         grid-template-columns: repeat(2,1fr);
     }
+    .accolades h1{
+        font-size: 5rem;
+    }
     .grow,.convos,.users{
         display: grid;
         grid-template-columns: repeat(2,1fr);
+        margin: 1rem 3rem;
+        padding: 1rem;
+    }
+    .grow header, .convos header, .users header{
+        margin: 0;
     }
     .users img,.grow img{
         grid-area: 1/2/1/2;
